@@ -7,7 +7,9 @@
     "start": "node index.js",
     "migrate": "knex migrate:latest",
     "seed": "knex seed:run",
-    "test": "cross-env NODE_ENV=testing jest --watch"
+    "test": "cross-env NODE_ENV=testing jest --watch",
+    "test:migrate": "cross-env NODE_ENV=testing knex migrate:latest",
+    "test:seed": "cross-env NODE_ENV=testing knex seed:run"
   },
   "repository": {
     "type": "git",
